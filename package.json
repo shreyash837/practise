@@ -1,0 +1,30 @@
+{
+  "name": "shreyashprotfolio",
+  "version": "1.0.0",
+  "description": "A modern interactive portfolio website showcasing my skills, projects, and experience as a full-stack developer with smooth animations and responsive design",
+  "keywords": [
+    "shreyash",
+    "khade"
+  ],
+  "homepage": "https://github.com/shreyash837/practise#readme",
+  "bugs": {
+    "url": "https://github.com/shreyash837/practise/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyash837/practise.git"
+  },
+  "license": "ISC",
+  "author": "shreyash",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
