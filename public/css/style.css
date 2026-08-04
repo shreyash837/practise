@@ -294,6 +294,11 @@ font-size: 2rem;
     user-select: none;
 }
 
+#lastWhoIam{
+    padding-right: 90vw;
+}
+
+
 .fullStack{
 
       background: linear-gradient(
