@@ -609,3 +609,286 @@ font-size: 2rem;
 }
 
 /* comment added forlearning git commit */
+
+/* project card css */
+.projectContaner{
+    width: 70%;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    transition: all 0.3s ease;
+    color: #000000;
+}
+.projectContaner * {
+    color: #000000;
+}
+
+.projectImage{
+    width: 600px;
+    background-color: #111;
+}
+
+.descriptionContaner{
+    background: #f6f6f6;
+    border: 1px solid #e8e8e8;
+    border-left: 5px solid #111;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.descriptionContaner p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.descriptionContaner p:last-child{
+    margin-bottom: 0;
+}
+
+/* tech stack css */
+/* ===========================
+   Tech Stack
+=========================== */
+
+.techStackContaner{
+    background: #f8f8f8;
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid #e6e6e6;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+/* Heading */
+
+.techStackContaner .projectSectionHeading{
+    grid-column: 1/-1;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+/* Category Heading */
+
+.techStackHeading{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: -12px;
+}
+
+/* Technology Grid */
+
+.technologyContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+/* Technology Card */
+
+.technology{
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 12px;
+
+    text-align: center;
+
+    font-size: .95rem;
+    font-weight: 500;
+    color: #444;
+
+    transition: .3s ease;
+    cursor: default;
+}
+
+.technology:hover{
+    background: #111;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .techStackContaner{
+        grid-template-columns: 1fr;
+    }
+
+    .technologyContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:480px){
+
+    .techStackContaner{
+        padding:18px;
+    }
+
+    .technologyContainer{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* engineeri */
+
+/* ===========================
+   Engineering Highlights
+=========================== */
+
+.engineeringHighlightsContainer{
+    background: #f8f8f8;
+    border: 1px solid #e6e6e6;
+    border-radius: 18px;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.featureContainer,
+.problemSolvedContainer{
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sectionHeading{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.feature,
+.problemSolved{
+    background: #f3f3f3;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 12px 14px;
+
+    font-size: .95rem;
+    color: #444;
+
+    transition: .25s ease;
+}
+
+.feature::before{
+    content: "✓ ";
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.problemSolved::before{
+    content: "⚡ ";
+}
+
+.feature:hover,
+.problemSolved:hover{
+    background: #111;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .engineeringHighlightsContainer{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.linkContainer{
+    display: flex;
+    gap: 16px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.liveLink,
+.sourceCodeLink{
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.liveLink{
+    background: #111;
+    color: #fff;
+}
+
+.liveLink:hover{
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.sourceCodeLink{
+    background: #f3f3f3;
+    color: #222;
+    border: 1px solid #ddd;
+}
+
+.sourceCodeLink:hover{
+    background: #e9e9e9;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px){
+
+    .projectContaner{
+        width: 100%;
+    }
+
+    .linkContainer{
+        flex-direction: column;
+    }
+
+    .liveLink,
+    .sourceCodeLink{
+        width: 100%;
+    }
+
+}
+
+#projects{
+    background: #F8F5F1;
+border-left: 5px solid #FF6B00;
+background-clip: border-box;
+background-attachment: scroll;
+}
