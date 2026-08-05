@@ -624,6 +624,7 @@ font-size: 2rem;
     gap: 28px;
     transition: all 0.3s ease;
     color: #000000;
+    margin-top: 100px;
 }
 .projectContaner * {
     color: #000000;
@@ -891,4 +892,381 @@ font-size: 2rem;
 border-left: 5px solid #FF6B00;
 background-clip: border-box;
 background-attachment: scroll;
+}
+
+.projectHeading{
+    color: #111;
+    width: max-content;
+    /* margin: auto; */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.pojectSectionDescrption{
+    font-size: 1.5rem;
+    color: #111;
+    padding: 16px 32px;
+   background: #f3f3f3;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    color: #444;
+  margin-top: 100px;
+  margin-bottom:150px;
+}
+
+/* contact section */
+
+.contactSection {
+
+    max-width: 1100px;
+    margin: 140px auto;
+    padding: 0 20px;
+
+}
+
+.contactHeading {
+
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.contactDescription {
+
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #a1a1aa;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 60px;
+
+}
+
+.contactContainer {
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contactCard {
+
+    width: 320px;
+    padding: 25px;
+    border: 1px solid #2b2b2b;
+    border-radius: 18px;
+    background: #111;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    text-decoration: none;
+    transition: .25s;
+
+}
+
+.contactCard:hover {
+
+    border-color: white;
+    transform: translateY(-6px);
+
+}
+
+.contactIcon {
+
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    flex-shrink: 0;
+
+}
+
+.contactTitle {
+
+    color: white;
+    font-size: .95rem;
+    margin-bottom: 6px;
+
+}
+
+.contactValue {
+
+    color: #9ca3af;
+    font-size: .92rem;
+    word-break: break-word;
+
+}
+
+.resumeBtn {
+
+    display: block;
+    margin: 60px auto 0;
+    padding: 14px 34px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .95rem;
+    transition: .25s;
+
+}
+
+.resumeBtn:hover {
+
+    background: #d4d4d4;
+
+}
+
+/* footer project */
+
+.footer{
+
+    margin-top:120px;
+    padding:60px 20px 35px;
+    border-top:1px solid #222;
+
+}
+
+.footerContent{
+
+    max-width:1100px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    flex-wrap:wrap;
+
+}
+
+.footerBrand{
+
+    max-width:450px;
+
+}
+
+.footerName{
+
+    font-size:1.7rem;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:12px;
+
+}
+
+.footerTagline{
+
+    color:#8d8d8d;
+    line-height:1.8;
+
+}
+
+.footerLinks{
+
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+
+}
+
+.footerLinks a{
+
+    color:#b5b5b5;
+    text-decoration:none;
+    transition:.25s;
+
+}
+
+.footerLinks a:hover{
+
+    color:#fff;
+
+}
+
+.footerBottom{
+
+    max-width:1100px;
+    margin:50px auto 0;
+    padding-top:25px;
+    border-top:1px solid #1b1b1b;
+    text-align:center;
+
+}
+
+.footerCredit{
+
+    color:#9a9a9a;
+    margin-bottom:10px;
+
+}
+
+.footerCredit span{
+
+    color:#fff;
+    font-weight:600;
+
+}
+
+.footerCopyright{
+
+    color:#666;
+    font-size:.9rem;
+
+}
+
+/* animation */
+
+/* ===========================
+   CONTACT BACKGROUND SHAPES
+=========================== */
+
+.contactSection{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contactBackground{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Common */
+
+.shape{
+    position: absolute;
+    opacity: .22;
+    /* animation: pulse 4s ease-in-out infinite alternate; */
+}
+
+/* Pink Circle */
+
+.circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:2px solid #ff4ecd;
+    top:8%;
+    left:8%;
+    box-shadow:
+        0 0 15px #ff4ecd,
+        0 0 35px #ff4ecd,
+        0 0 70px rgba(255,78,205,.5);
+}
+
+/* Blue Square */
+
+.square{
+    width:90px;
+    height:90px;
+    border:2px solid #42b7ff;
+    top:18%;
+    right:15%;
+    box-shadow:
+        0 0 15px #42b7ff,
+        0 0 35px #42b7ff,
+        0 0 70px rgba(66,183,255,.5);
+}
+
+/* Green Triangle */
+
+.triangle{
+    width:0;
+    height:0;
+
+    border-left:55px solid transparent;
+    border-right:55px solid transparent;
+    border-bottom:90px solid #46ff95;
+
+    top:58%;
+    left:12%;
+
+    filter:
+        drop-shadow(0 0 12px #46ff95)
+        drop-shadow(0 0 30px #46ff95);
+}
+
+/* Purple Diamond */
+
+.diamond{
+    width:80px;
+    height:80px;
+    border:2px solid #9d6bff;
+    transform:rotate(45deg);
+
+    right:28%;
+    bottom:18%;
+
+    box-shadow:
+        0 0 15px #9d6bff,
+        0 0 35px #9d6bff,
+        0 0 70px rgba(157,107,255,.5);
+}
+
+/* Cyan Circle */
+
+.circle2{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:2px solid #00e5ff;
+
+    right:8%;
+    bottom:10%;
+
+    box-shadow:
+        0 0 15px #00e5ff,
+        0 0 35px #00e5ff,
+        0 0 70px rgba(0,229,255,.5);
+}
+
+/* Yellow Square */
+
+.square2{
+    width:60px;
+    height:60px;
+    border:2px solid #ffd93d;
+
+    left:32%;
+    bottom:8%;
+
+    box-shadow:
+        0 0 15px #ffd93d,
+        0 0 35px #ffd93d,
+        0 0 70px rgba(255,217,61,.5);
+}
+
+/* Glow Pulse */
+
+@keyframes pulse{
+
+    from{
+
+        opacity:.12;
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:.28;
+        transform:scale(1.08);
+
+    }
+
 }
