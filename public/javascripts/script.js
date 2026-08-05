@@ -274,3 +274,18 @@ gsap.utils.toArray(".shape").forEach((shape)=>{
     });
 
 });
+
+document.querySelectorAll('.projectSectionTopText').forEach((ele)=>{
+    gsap.from(ele,{
+        // y:200,
+        scale:0.5,
+        // opacity:0,
+        scrollTrigger:{
+            trigger:ele,
+            scroller:'body',
+            start:'top 90%',
+            end:"top -50%",
+            scrub:true
+        }
+    })
+})
