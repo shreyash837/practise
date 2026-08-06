@@ -182,3 +182,18 @@ document.querySelectorAll(".skillCard").forEach((child)=>{
     }
     i++;
 })
+
+
+gsap.utils.toArray(".shape").forEach((shape)=>{
+
+    gsap.to(shape,{
+
+        x:100,
+        rotate:360,
+        duration:5,
+        repeat:-1,
+        yoyo:true
+
+    });
+
+});
