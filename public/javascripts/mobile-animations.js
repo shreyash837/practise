@@ -131,3 +131,54 @@ document.querySelectorAll('.AboutBadgesContaner').forEach((ele)=>{
     })
 })
 
+gsap.from(".skillsHeading",{
+    // height:0,
+    opacity:0,
+    duration:2,
+    scrollTrigger:{
+        trigger:".skillsHeading",
+        start:"top center",
+        // scrub:4
+        // markers:true
+    }
+});
+
+const SkilsContaner= document.querySelector(".skillsWrapper");
+
+let i=1
+
+document.querySelectorAll(".skillCard").forEach((child)=>{
+    console.log(child);
+   
+    if(i %2 == 0){
+    gsap.from(child,{
+        // height:0,
+        opacity:0.5,
+        x:200,
+        y:200,
+        duration:1,
+        scrollTrigger:{
+            trigger:child,
+            start:"top 100%",
+            end:-'300%',
+            // scrub:4,
+            // markers:true
+        }
+    })}else{
+        gsap.from(child,{
+        // height:0,
+        opacity:0,
+        x:-200,
+        y:200,
+        duration:1,
+        scrollTrigger:{
+            trigger:child,
+            start:"top 100%",
+            end:-'300%',
+            // scrub:2,
+            // markers:true
+        }
+    }) 
+    }
+    i++;
+})
