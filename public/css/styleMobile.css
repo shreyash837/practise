@@ -1,0 +1,93 @@
+@media screen  and (max-width: 600px) {
+    
+    .mainHero{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        /* align-items: center; */
+        position: relative;
+        /* justify-content: center; */
+        
+    }
+    #heroBtn{
+        opacity: 1;
+    }
+
+.name,.introSpan{
+
+    font-size: 50px;
+
+}
+.pngBtnWrapper{
+    position: absolute;
+    top: 0%;
+    right: -15%;
+    z-index: -1;
+
+}
+.mainHeroTextWraper{
+    margin-top: 20%;
+}
+
+#about{
+    height: max-content;
+}
+
+
+   #abouContaner {
+        position: static; /* ya relative, agar kuch aur zaroorat ho */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+       
+    }
+
+    .AboutBadgesContaner {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .aboutBadges {
+        position: static; /* ye sabse important hai */
+    }
+
+    .abText {
+        position: static;
+    }
+.AboutBadgesContaner{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.abText{
+    white-space:normal;
+    margin-bottom: 150px;
+    padding-left: 20px;
+}
+#lastWhoIam{
+    padding: 0;
+}
+.projectSectionTopText{
+    width: 100%;
+    white-space: normal;
+    padding-left: 10px;
+    
+}
+.projectName{
+    font-size: 35px;
+    white-space: wrap;
+    width: 100%;
+}
+.projectContaner{
+    width: 95%;
+}
+
+body{
+    overflow-x:hidden;
+    width: 98vw;
+}
+
+}

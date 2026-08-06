@@ -1278,3 +1278,11 @@ background-attachment: scroll;
 #secondProject{
     margin-top: 200px;
 }
+html,
+body{
+    scrollbar-width:none;
+}
+
+body::-webkit-scrollbar{
+    display:none;
+}
