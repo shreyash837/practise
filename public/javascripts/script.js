@@ -1,5 +1,11 @@
 console.log('connected');
 
+
+document.querySelector('.subheadingText').innerHTML=`Full Stack Developer<br>
+
+      Building scalable web solutions <br>
+      from  design to production.`;
+
 document.querySelector("#heroBtn").addEventListener('mouseenter',(e)=>{
     console.log('mouse entered in btn');
     gsap.to('#heroBtn',{
@@ -289,3 +295,13 @@ document.querySelectorAll('.projectSectionTopText').forEach((ele)=>{
         }
     })
 })
+
+gsap.from(".subheadingText",{
+    width:0,
+    duration:3,
+    ease:"power2.out",
+    scrollTrigger:{
+        trigger:".subheadingText",
+        start:"top 70%"
+    }
+});

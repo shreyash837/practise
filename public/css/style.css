@@ -1286,3 +1286,51 @@ body{
 body::-webkit-scrollbar{
     display:none;
 }
+.subheading{
+    background: transparent;
+}
+
+.subheadingText{
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    width: 500px;
+}
+
+.secondColorBadge1{
+
+
+               background: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+  box-shadow: 0 0 15px rgba(110, 231, 183, 0.6),
+              0 0 30px rgba(110, 231, 183, 0.3);
+  color: #064e3b;
+
+
+}
+.secondColorBadge2{
+
+
+              background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  box-shadow: 0 0 15px rgba(30, 58, 138, 0.6),
+              0 0 30px rgba(30, 58, 138, 0.3);
+  color: #e0e7ff;
+
+
+}
+
+.thirdColorBadge1{
+
+
+background: linear-gradient(135deg, #d8b4fe, #c084fc);
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.6),
+              0 0 30px rgba(192, 132, 252, 0.3);
+  color: #1a1a1a;
+}
+.thirdColorBadge2{
+
+     
+ background: linear-gradient(135deg, #fdba74, #fb923c);
+  box-shadow: 0 0 15px rgba(251, 146, 60, 0.6),
+              0 0 30px rgba(251, 146, 60, 0.3);
+  color: #1a1a1a; 
+}

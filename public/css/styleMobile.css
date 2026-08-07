@@ -90,4 +90,15 @@ body{
     width: 98vw;
 }
 
+
+.subheadingText{
+    display:block;
+    /* overflow:hidden; */
+    white-space:normal;
+    width: max-content;
+    padding: 0%;
+    padding-left: 5px;
+}
+
+
 }
