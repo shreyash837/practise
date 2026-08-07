@@ -1334,3 +1334,131 @@ background: linear-gradient(135deg, #d8b4fe, #c084fc);
               0 0 30px rgba(251, 146, 60, 0.3);
   color: #1a1a1a; 
 }
+
+#lastSkillCard{
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+#projects{
+    padding-bottom: 500px;
+}
+#contact{
+    padding-bottom: 300px;
+}
+
+/* beyound coding section  */
+.marqueeTrack {
+  display: flex;
+  gap: 150px;
+  width: max-content;
+}
+
+.glowCard {
+  flex: 0 0 340px;
+  min-height: 190px;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  transition: transform 0.3s ease;
+}
+
+.glowCard h2 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.glowCard p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.glowCard:hover {
+  transform: translateY(-8px);
+}
+
+/* Row 1 colors — background gradient + glow */
+.cardPurple {
+  background: linear-gradient(135deg, #c084fc, #7c3aed);
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.6), 0 0 50px rgba(192, 132, 252, 0.3);
+}
+.cardOrange {
+  background: linear-gradient(135deg, #fb923c, #c2410c);
+  box-shadow: 0 0 25px rgba(251, 146, 60, 0.6), 0 0 50px rgba(251, 146, 60, 0.3);
+}
+.cardBlue {
+  background: linear-gradient(135deg, #60a5fa, #1d4ed8);
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.6), 0 0 50px rgba(96, 165, 250, 0.3);
+}
+.cardPink {
+  background: linear-gradient(135deg, #f472b6, #be185d);
+  box-shadow: 0 0 25px rgba(244, 114, 182, 0.6), 0 0 50px rgba(244, 114, 182, 0.3);
+}
+
+/* Row 2 colors — background gradient + glow */
+.cardGreen {
+  background: linear-gradient(135deg, #4ade80, #15803d);
+  box-shadow: 0 0 25px rgba(74, 222, 128, 0.6), 0 0 50px rgba(74, 222, 128, 0.3);
+}
+.cardTeal {
+  background: linear-gradient(135deg, #2dd4bf, #0f766e);
+  box-shadow: 0 0 25px rgba(45, 212, 191, 0.6), 0 0 50px rgba(45, 212, 191, 0.3);
+}
+.cardYellow {
+  background: linear-gradient(135deg, #facc15, #a16207);
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.6), 0 0 50px rgba(250, 204, 21, 0.3);
+}
+.cardRed {
+  background: linear-gradient(135deg, #f87171, #b91c1c);
+  box-shadow: 0 0 25px rgba(248, 113, 113, 0.6), 0 0 50px rgba(248, 113, 113, 0.3);
+}
+.cardIndigo {
+  background: linear-gradient(135deg, #818cf8, #4338ca);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.6), 0 0 50px rgba(99, 102, 241, 0.3);
+}
+
+.trackRTL {
+  animation: scrollLeft 28s linear infinite;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.trackLTR:hover {
+  animation-play-state: paused;
+}
+
+.trackRTL:hover {
+  animation-play-state: paused;
+}
+
+.trackLTR {
+  animation: scrollRight 30s linear infinite;
+  margin-bottom: 100px;
+
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 100px;
+  width: max-content;
+}
+
+#beyondCode{
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
