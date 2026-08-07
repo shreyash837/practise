@@ -1,6 +1,15 @@
 console.log('connected');
 
 
+// contact btn click handle
+
+document.querySelector("#heroBtn").addEventListener('click',(e)=>{
+    console.log(`btn clicked`);
+    
+    window.location.href="/#contact"
+    
+})
+
 document.querySelector('.subheadingText').innerHTML=`Full Stack Developer<br>
 
       Building scalable web solutions <br>
@@ -304,4 +313,12 @@ gsap.from(".subheadingText",{
         trigger:".subheadingText",
         start:"top 70%"
     }
+});
+
+gsap.from(".navLinks li", {
+  y: 50,
+  opacity: 0,
+  duration: 2,
+  stagger: 0.6,   // har element 0.15s delay se animate hoga
+  ease: "power2.out"
 });

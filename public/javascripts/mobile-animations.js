@@ -1,5 +1,14 @@
 
+document.querySelector("#heroBtn").addEventListener('click',(e)=>{
+    console.log(`btn clicked`);
+    
+    window.location.href="/#contact"
+    
+})
+
+gsap.registerPlugin(ScrollTrigger);
 let t1=gsap.timeline()
+
 
 t1.from(".introSpan", {
     y: 40,
@@ -109,12 +118,12 @@ gsap.from("#letterSPng",{
 
 document.querySelectorAll('.abText').forEach((ele)=>{
     gsap.from(ele,{
-        scale:0.1,
+        scale:0.3,
         scrollTrigger:{
-
+            //   markers:true,
             trigger:ele,
             start:'top 100%',
-            scrub:true
+            scrub:2
         }
     })
 })
@@ -123,8 +132,9 @@ document.querySelectorAll('.AboutBadgesContaner').forEach((ele)=>{
         scale:0.1,
         rotate:360,
         duration:2,
+        
         scrollTrigger:{
-
+            // markers:true,
             trigger:ele,
             start:'top 90%'
         }
@@ -196,4 +206,13 @@ gsap.utils.toArray(".shape").forEach((shape)=>{
 
     });
 
+});
+
+
+gsap.from(".navLinks li", {
+  y: 50,
+  opacity: 0,
+  duration: 2,
+  stagger: 1,   // har element 0.15s delay se animate hoga
+  ease: "power2.out"
 });
